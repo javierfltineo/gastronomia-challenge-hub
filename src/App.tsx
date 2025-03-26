@@ -9,6 +9,7 @@ import CompetitionDetails from "./pages/CompetitionDetails";
 import Competitions from "./pages/Competitions";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import RestaurantDashboard from "./pages/RestaurantDashboard";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/competition/:id" element={<CompetitionDetails />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/restaurant-dashboard" element={<RestaurantDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
